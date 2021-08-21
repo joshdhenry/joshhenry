@@ -1,6 +1,6 @@
 const Portfolio = () => {
   return (
-    <div>
+    <div className={'Portfolio'}>
       <div>Completed Projects</div>
       <div>vertical with linear x offsets (project pictures)</div>
     </div>

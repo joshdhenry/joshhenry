@@ -8,7 +8,7 @@ import myFishPalImage from '../assets/portfolio-my-fish-pal.jpg'
 
 const Pitch = () => {
   return (
-    <div>
+    <div className={Pitch}>
       <Parallax
         className="custom-class"
         tagOuter="figure"
