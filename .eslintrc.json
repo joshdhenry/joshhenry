@@ -47,6 +47,8 @@
     "react/sort-comp": 1,
     "react/sort-prop-types": 2,
     "react/wrap-multilines": 0,
+    "no-console": 2,
+    "semi": 0,
     "sort-imports": [
       "error",
       {

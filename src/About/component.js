@@ -31,6 +31,7 @@ const About = () => {
         needs. Delivering a clean, simple, and high-quality experience to the
         end-user is my passion.
       </div>
+      <h1>Resume</h1>
     </div>
   );
 };
