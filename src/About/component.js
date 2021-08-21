@@ -14,7 +14,7 @@ const About = () => {
       </div>
 
       <div>
-        I am also president and developer of my own software company,{" "}
+        I am also president and developer of my own software company,
         <a
           href="http://www.bigsmashsoftware.com/"
           rel="noreferrer"
@@ -22,8 +22,8 @@ const About = () => {
         >
           Big Smash, LLC
         </a>
-        ,and have developed <a href="portfolio.html#apps">four iOS apps</a>, an{" "}
-        <a href="spinwheelcontrol.html">iOS CocoaPod framework</a>, and{" "}
+        ,and have developed <a href="portfolio.html#apps">four iOS apps</a>, an
+        <a href="spinwheelcontrol.html">iOS CocoaPod framework</a>, and
         <a href="portfolio.html#websites">several websites</a>.
       </div>
       <div>
@@ -33,7 +33,7 @@ const About = () => {
       </div>
       <h1>Resume</h1>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

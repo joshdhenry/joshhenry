@@ -1,7 +1,7 @@
-import { Parallax } from "react-scroll-parallax";
+import { Parallax } from 'react-scroll-parallax'
 
-import bigSmashImage from "../assets/portfolio-big-smash-software-website.jpg";
-import myFishPalImage from "../assets/portfolio-my-fish-pal.jpg";
+import bigSmashImage from '../assets/portfolio-big-smash-software-website.jpg'
+import myFishPalImage from '../assets/portfolio-my-fish-pal.jpg'
 
 // import bubbleImage from "./assets/bubble-sophie-and-clover.jpg";
 // import egyptImage from "./assets/egypt.jpg";
@@ -58,7 +58,7 @@ const Pitch = () => {
       <h1>Quality and big free</h1>
       <h1>Agile process</h1>
     </div>
-  );
-};
+  )
+}
 
-export default Pitch;
+export default Pitch
