@@ -1,15 +1,16 @@
 import "./App.css";
-import "./NavigationBar/component";
-import NavigationBar from "./NavigationBar/component";
+
 import {
-  Parallax,
-  ParallaxBanner,
+  // Parallax,
+  // ParallaxBanner,
   ParallaxProvider,
 } from "react-scroll-parallax";
-import bubbleImage from "./assets/bubble-sophie-and-clover.jpg";
-import egyptImage from "./assets/egypt.jpg";
-import bigSmashImage from "./assets/portfolio-big-smash-software-website.jpg";
-import myFishPalImage from "./assets/portfolio-my-fish-pal.jpg";
+
+// import bubbleImage from "./assets/bubble-sophie-and-clover.jpg";
+// import egyptImage from "./assets/egypt.jpg";
+// import bigSmashImage from "./assets/portfolio-big-smash-software-website.jpg";
+// import myFishPalImage from "./assets/portfolio-my-fish-pal.jpg";
+import NavigationBar from "./NavigationBar/component";
 
 function App() {
   return (
@@ -70,7 +71,11 @@ function App() {
 
         <div>
           I am also president and developer of my own software company,{" "}
-          <a href="http://www.bigsmashsoftware.com/" target="_blank">
+          <a
+            href="http://www.bigsmashsoftware.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
             Big Smash, LLC
           </a>
           ,and have developed <a href="portfolio.html#apps">four iOS apps</a>,
