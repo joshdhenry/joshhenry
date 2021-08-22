@@ -52,11 +52,11 @@ const Pitch = () => {
       {/*</ParallaxBanner>*/}
 
       <h1>60 second sell</h1>
-      <h1>Mobile development</h1>
-      <h1>Web development</h1>
-      <h1>Attention to UI detail</h1>
-      <h1>Quality and big free</h1>
-      <h1>Agile process</h1>
+      <h1>Mobile development - phone</h1>
+      <h1>Web development - PC</h1>
+      <h1>Attention to UI detail - Magnifying glass</h1>
+      <h1>Quality and big free - Bug</h1>
+      <h1>Agile process - List</h1>
     </div>
   )
 }
