@@ -1,8 +1,8 @@
 import Slide from 'react-reveal/Fade'
 import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
 
-import bigSmashImage from '../../assets/portfolio-big-smash-software-website.jpg'
-import myFishPalImage from '../../assets/portfolio-my-fish-pal.jpg'
+import bigSmashImage from '../../assets/images/portfolio-big-smash-software-website.jpg'
+import myFishPalImage from '../../assets/images/portfolio-my-fish-pal.jpg'
 // import bubbleImage from "./assets/bubble-sophie-and-clover.jpg";
 // import egyptImage from "./assets/egypt.jpg";
 

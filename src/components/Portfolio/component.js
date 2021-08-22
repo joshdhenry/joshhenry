@@ -1,14 +1,13 @@
-import bigSmashImage from '../../assets/portfolio-big-smash-software-website.jpg'
-import botWebsiteImage from '../../assets/portfolio-BOT-website.jpg'
-import metricsDashboardImage from '../../assets/portfolio-metrics-dashboard.png'
-import myFishPalImage from '../../assets/portfolio-my-fish-pal.jpg'
-import skylineTriviaImage from '../../assets/portfolio-skyline-trivia.jpg'
-import spinWheelControlImage from '../../assets/portfolio-spinwheelcontrol.jpg'
-import vistaWeatherImage from '../../assets/portfolio-vista-weather.jpg'
-import zenBuilderImage from '../../assets/portfolio-zen-builder.jpg'
+import bigSmashImage from '../../assets/images/portfolio-big-smash-software-website.jpg'
+import botWebsiteImage from '../../assets/images/portfolio-BOT-website.jpg'
+import metricsDashboardImage from '../../assets/images/portfolio-metrics-dashboard.png'
+import myFishPalImage from '../../assets/images/portfolio-my-fish-pal.jpg'
+import skylineTriviaImage from '../../assets/images/portfolio-skyline-trivia.jpg'
+import spinWheelControlImage from '../../assets/images/portfolio-spinwheelcontrol.jpg'
+import vistaWeatherImage from '../../assets/images/portfolio-vista-weather.jpg'
+import zenBuilderImage from '../../assets/images/portfolio-zen-builder.jpg'
+import { TECHNOLOGIES } from '../../config/constants'
 import PortfolioItem from '../PortfolioItem'
-
-import { TECHNOLOGIES } from './constants'
 
 const Portfolio = () => {
   return (
@@ -17,37 +16,45 @@ const Portfolio = () => {
       <PortfolioItem
         description={'K8 Player'}
         image={vistaWeatherImage}
-        technologies={[TECHNOLOGIES.JAVASCRIPT]}
+        technologies={[
+          TECHNOLOGIES.REACT,
+          TECHNOLOGIES.JAVASCRIPT,
+          TECHNOLOGIES.NPM,
+        ]}
       />
       <PortfolioItem
         description={'Scrollable Player'}
         image={vistaWeatherImage}
-        technologies={[]}
+        technologies={[
+          TECHNOLOGIES.REACT,
+          TECHNOLOGIES.JAVASCRIPT,
+          TECHNOLOGIES.NPM,
+        ]}
       />
       <PortfolioItem
         description={'My Fish Pal ......'}
         image={myFishPalImage}
-        technologies={[]}
+        technologies={[TECHNOLOGIES.SWIFT, TECHNOLOGIES.PHOTOSHOP]}
       />
       <PortfolioItem
         description={'Zen Builder'}
         image={zenBuilderImage}
-        technologies={[]}
+        technologies={[TECHNOLOGIES.OBJECTIVE_C, TECHNOLOGIES.PHOTOSHOP]}
       />
       <PortfolioItem
         description={'Vista Weather'}
         image={vistaWeatherImage}
-        technologies={[]}
+        technologies={[TECHNOLOGIES.SWIFT]}
       />
       <PortfolioItem
         description={'SkylinesTrivia'}
         image={skylineTriviaImage}
-        technologies={[]}
+        technologies={[TECHNOLOGIES.SWIFT, TECHNOLOGIES.PHOTOSHOP]}
       />
       <PortfolioItem
         description={'Spin Wheel Control CocoaPod'}
         image={spinWheelControlImage}
-        technologies={[]}
+        technologies={[TECHNOLOGIES.SWIFT, TECHNOLOGIES.COCOAPODS]}
       />
       <PortfolioItem
         description={
