@@ -1,8 +1,8 @@
-import About from '../About/component'
-import Contact from '../Contact/component'
-import NavigationBar from '../NavigationBar/component'
-import Pitch from '../Pitch/component'
-import Portfolio from '../Portfolio/component'
+import About from '../About'
+import Contact from '../Contact'
+import NavigationBar from '../NavigationBar'
+import Pitch from '../Pitch'
+import Portfolio from '../Portfolio'
 
 const Home = () => {
   return (

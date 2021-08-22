@@ -1,29 +1,42 @@
-import { ABOUT, CONTACT, PITCH, PORTFOLIO } from './constants'
+import PropTypes from 'prop-types'
+
+import { ABOUT, CONTACT, PORTFOLIO } from './constants'
 import styles from './styles'
 
-const NavigationBar = () => {
-  const onClick = (className) => {
-    const element = document.getElementsByClassName(className)[0]
-
-    element?.scrollIntoView({
-      behavior: 'smooth',
-    })
-  }
-
+const NavigationBarComponent = ({
+  navigateToAbout,
+  navigateToContact,
+  navigateToPitch,
+  navigateToPortfolio,
+}) => {
   return (
     <div className="NavigationBar" style={styles.wrapper}>
-      <span onClick={() => onClick(PITCH)}>Josh Henry</span>
-      <span onClick={() => onClick(ABOUT)} style={styles.link}>
+      <span onClick={navigateToPitch}>Josh Henry</span>
+      <span onClick={navigateToAbout} style={styles.link}>
         {ABOUT}
       </span>
-      <span onClick={() => onClick(PORTFOLIO)} style={styles.link}>
+      <span onClick={navigateToPortfolio} style={styles.link}>
         {PORTFOLIO}
       </span>
-      <span onClick={() => onClick(CONTACT)} style={styles.link}>
+      <span onClick={navigateToContact} style={styles.link}>
         {CONTACT}
       </span>
     </div>
   )
 }
 
-export default NavigationBar
+NavigationBarComponent.propTypes = {
+  navigateToAbout: PropTypes.func,
+  navigateToContact: PropTypes.func,
+  navigateToPitch: PropTypes.func,
+  navigateToPortfolio: PropTypes.func,
+}
+
+NavigationBarComponent.defaultProps = {
+  navigateToAbout() {},
+  navigateToContact() {},
+  navigateToPitch() {},
+  navigateToPortfolio() {},
+}
+
+export default NavigationBarComponent
