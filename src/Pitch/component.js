@@ -1,8 +1,8 @@
+import Slide from 'react-reveal/Fade'
 import { Parallax } from 'react-scroll-parallax'
 
 import bigSmashImage from '../assets/portfolio-big-smash-software-website.jpg'
 import myFishPalImage from '../assets/portfolio-my-fish-pal.jpg'
-
 // import bubbleImage from "./assets/bubble-sophie-and-clover.jpg";
 // import egyptImage from "./assets/egypt.jpg";
 
@@ -50,13 +50,14 @@ const Pitch = () => {
       {/*>*/}
       {/*  Banner Children*/}
       {/*</ParallaxBanner>*/}
-
-      <h1>60 second sell</h1>
-      <h1>Mobile development - phone</h1>
-      <h1>Web development - PC</h1>
-      <h1>Attention to UI detail - Magnifying glass</h1>
-      <h1>Quality and big free - Bug</h1>
-      <h1>Agile process - List</h1>
+      <Slide cascade left>
+        <h1>60 second sell</h1>
+        <h1>Mobile development - phone</h1>
+        <h1>Web development - PC</h1>
+        <h1>Attention to UI detail - Magnifying glass</h1>
+        <h1>Quality and big free - Bug</h1>
+        <h1>Agile process - List</h1>
+      </Slide>
     </div>
   )
 }

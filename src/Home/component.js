@@ -9,7 +9,9 @@ const Home = () => {
     <div className="App">
       <NavigationBar />
       <Pitch />
+      <div style={{ height: '500px' }} />
       <Portfolio />
+      <div style={{ height: '500px' }} />
       <About />
       <div style={{ height: '500px' }} />
       <Contact />
