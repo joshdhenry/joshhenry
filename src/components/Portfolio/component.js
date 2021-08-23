@@ -20,9 +20,11 @@ const Portfolio = () => {
           TECHNOLOGIES.REACT,
           TECHNOLOGIES.JAVASCRIPT,
           TECHNOLOGIES.NPM,
+          TECHNOLOGIES.AZURE,
         ]}
         title={'Secondstep K-8 lesson player TEST'}
       />
+
       <PortfolioItem
         description={'Scrollable Player'}
         image={vistaWeatherImage}
@@ -30,9 +32,11 @@ const Portfolio = () => {
           TECHNOLOGIES.REACT,
           TECHNOLOGIES.JAVASCRIPT,
           TECHNOLOGIES.NPM,
+          TECHNOLOGIES.AZURE,
         ]}
         title={'Secondstep Social and Emotional Learning Lesson Player'}
       />
+
       <PortfolioItem
         description={'Mind Yeti'}
         image={vistaWeatherImage}
@@ -41,41 +45,47 @@ const Portfolio = () => {
           TECHNOLOGIES.REACT_NATIVE,
           TECHNOLOGIES.JAVASCRIPT,
           TECHNOLOGIES.NPM,
-          // Go
+          TECHNOLOGIES.GO,
           // Google apps
         ]}
         title={'Mind Yeti meditation app'}
       />
+
       <PortfolioItem
         description={'My Fish Pal ......'}
         image={myFishPalImage}
         technologies={[TECHNOLOGIES.SWIFT, TECHNOLOGIES.PHOTOSHOP]}
         title={'My Fish Pal app'}
       />
+
       <PortfolioItem
         description={'Zen Builder'}
         image={zenBuilderImage}
         technologies={[TECHNOLOGIES.OBJECTIVE_C, TECHNOLOGIES.PHOTOSHOP]}
         title={'Zen Builder app'}
       />
+
       <PortfolioItem
         description={'Vista Weather'}
         image={vistaWeatherImage}
         technologies={[TECHNOLOGIES.SWIFT]}
         title={'Vista Weather app'}
       />
+
       <PortfolioItem
         description={'SkylinesTrivia'}
         image={skylineTriviaImage}
         technologies={[TECHNOLOGIES.SWIFT, TECHNOLOGIES.PHOTOSHOP]}
         title={'Skylines Trivia app'}
       />
+
       <PortfolioItem
         description={'Spin Wheel Control CocoaPod'}
         image={spinWheelControlImage}
         technologies={[TECHNOLOGIES.SWIFT, TECHNOLOGIES.COCOAPODS]}
         title={'Spin Wheel Control CocoaPod'}
       />
+
       <PortfolioItem
         description={
           'Formed and founded my own independent software company ..........'
@@ -84,12 +94,14 @@ const Portfolio = () => {
         technologies={[]}
         title={'Big Smash Software, LLC.'}
       />
+
       <PortfolioItem
         description={'Central Coop Board of Trustees Website'}
         image={botWebsiteImage}
         technologies={[]}
         title={'Big Smash Software, LLC.'}
       />
+
       <PortfolioItem
         description={'Metrics dashboard'}
         image={metricsDashboardImage}
@@ -102,7 +114,7 @@ const Portfolio = () => {
         OR INSTEAD project pic comes in from left of screen, tools I used for it
         come in from the right, and text description fades in on scroll
       </div>
-    </div>;
+    </div>
   )
 }
 

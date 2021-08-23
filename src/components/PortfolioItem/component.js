@@ -1,7 +1,9 @@
 import { PropTypes } from 'prop-types'
 import { Parallax } from 'react-scroll-parallax'
 
+import azureImage from '../../assets/images/technologies/azureIcon.png'
 import cocoaPodsImage from '../../assets/images/technologies/cocoapodsIcon.png'
+import goImage from '../../assets/images/technologies/goIcon.png'
 import javaImage from '../../assets/images/technologies/javaicon.png'
 import javscriptImage from '../../assets/images/technologies/javascriptIcon.png'
 import nodeImage from '../../assets/images/technologies/nodeIcon.png'
@@ -13,66 +15,88 @@ import reactNativeImage from '../../assets/images/technologies/reactNative.png'
 import swiftImage from '../../assets/images/technologies/swift.png'
 import webStormImage from '../../assets/images/technologies/webstorm.png'
 import { TECHNOLOGIES } from '../../config/constants'
+import Fade from '../Fade'
 
 import styles from './styles'
 
-const Portfolio = ({ image, description, technologies, title }) => {
+const PortfolioItem = ({ image, description, technologies, title }) => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        flex: 1,
-        flexDirection: 'row',
-      }}
-    >
-      <Parallax
-        className="custom-class"
-        tagOuter="figure"
-        x={['-1000px', '-10px']}
-      >
-        <img src={image} />
-      </Parallax>
-      <div style={{ backgroundColor: 'red' }}>
-        <h1>{title}</h1>
-        <div>{description}</div>
+    <div style={styles.wrapper}>
+      <div style={styles.projectImage}>
+        <Parallax
+          className="custom-class"
+          tagOuter="figure"
+          x={['-1000px', '0px']}
+        >
+          <img src={image} />
+        </Parallax>
+      </div>
+
+      <div style={styles.text}>
+        <Fade cascade>
+          <h1>{title}</h1>
+          <div>{description}</div>
+        </Fade>
+
         {technologies.map((technology) => {
+          let image
+
           switch (technology) {
             case TECHNOLOGIES.JAVASCRIPT:
-              return <img src={javscriptImage} style={styles.technology} />
+              image = javscriptImage
+              break
             case TECHNOLOGIES.NPM:
-              return <img src={npmImage} style={styles.technology} />
+              image = npmImage
+              break
             case TECHNOLOGIES.JAVA:
-              return <img src={javaImage} style={styles.technology} />
+              image = javaImage
+              break
             case TECHNOLOGIES.COCOAPODS:
-              return <img src={cocoaPodsImage} style={styles.technology} />
+              image = cocoaPodsImage
+              break
             case TECHNOLOGIES.PHOTOSHOP:
-              return <img src={photoshopImage} style={styles.technology} />
+              image = photoshopImage
+              break
             case TECHNOLOGIES.NODE:
-              return <img src={nodeImage} style={styles.technology} />
+              image = nodeImage
+              break
             case TECHNOLOGIES.WEBSTORM:
-              return <img src={webStormImage} style={styles.technology} />
+              image = webStormImage
+              break
             case TECHNOLOGIES.OBJECTIVE_C:
-              return <img src={objectiveCImage} style={styles.technology} />
+              image = objectiveCImage
+              break
             case TECHNOLOGIES.SWIFT:
-              return <img src={swiftImage} style={styles.technology} />
+              image = swiftImage
+              break
             case TECHNOLOGIES.REACT_NATIVE:
-              return <img src={reactNativeImage} style={styles.technology} />
+              image = reactNativeImage
+              break
             case TECHNOLOGIES.REACT:
-              return <img src={reactImage} style={styles.technology} />
+              image = reactImage
+              break
+            case TECHNOLOGIES.AZURE:
+              image = azureImage
+              break
+            case TECHNOLOGIES.GO:
+              image = goImage
+              break
             default:
-              return
+              break
           }
+
+          return <img src={image} style={styles.technology} />
         })}
       </div>
     </div>
   )
 }
 
-Portfolio.propTypes = {
+PortfolioItem.propTypes = {
   description: PropTypes.string,
   image: PropTypes.string,
   technologies: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string,
 }
 
-export default Portfolio
+export default PortfolioItem
