@@ -18,15 +18,21 @@ import styles from './styles'
 
 const Portfolio = ({ image, description, technologies, title }) => {
   return (
-    <div style={{ display: 'flex', flex: 1, flexDirection: 'row' }}>
+    <div
+      style={{
+        display: 'flex',
+        flex: 1,
+        flexDirection: 'row',
+      }}
+    >
       <Parallax
         className="custom-class"
         tagOuter="figure"
-        x={['-200px', '-10px']}
+        x={['-1000px', '-10px']}
       >
         <img src={image} />
       </Parallax>
-      <div>
+      <div style={{ backgroundColor: 'red' }}>
         <h1>{title}</h1>
         <div>{description}</div>
         {technologies.map((technology) => {
@@ -66,6 +72,7 @@ Portfolio.propTypes = {
   description: PropTypes.string,
   image: PropTypes.string,
   technologies: PropTypes.arrayOf(PropTypes.string),
+  title: PropTypes.string,
 }
 
 export default Portfolio
