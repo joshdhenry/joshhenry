@@ -21,6 +21,7 @@ const Portfolio = () => {
           TECHNOLOGIES.JAVASCRIPT,
           TECHNOLOGIES.NPM,
         ]}
+        title={'Secondstep K-8 lesson player'}
       />
       <PortfolioItem
         description={'Scrollable Player'}
@@ -30,31 +31,50 @@ const Portfolio = () => {
           TECHNOLOGIES.JAVASCRIPT,
           TECHNOLOGIES.NPM,
         ]}
+        title={'Secondstep Social and Emotional Learning Lesson Player'}
+      />
+      <PortfolioItem
+        description={'Mind Yeti'}
+        image={vistaWeatherImage}
+        technologies={[
+          TECHNOLOGIES.REACT,
+          TECHNOLOGIES.REACT_NATIVE,
+          TECHNOLOGIES.JAVASCRIPT,
+          TECHNOLOGIES.NPM,
+          // Go
+          // Google apps
+        ]}
+        title={'Mind Yeti meditation app'}
       />
       <PortfolioItem
         description={'My Fish Pal ......'}
         image={myFishPalImage}
         technologies={[TECHNOLOGIES.SWIFT, TECHNOLOGIES.PHOTOSHOP]}
+        title={'My Fish Pal app'}
       />
       <PortfolioItem
         description={'Zen Builder'}
         image={zenBuilderImage}
         technologies={[TECHNOLOGIES.OBJECTIVE_C, TECHNOLOGIES.PHOTOSHOP]}
+        title={'Zen Builder app'}
       />
       <PortfolioItem
         description={'Vista Weather'}
         image={vistaWeatherImage}
         technologies={[TECHNOLOGIES.SWIFT]}
+        title={'Vista Weather app'}
       />
       <PortfolioItem
         description={'SkylinesTrivia'}
         image={skylineTriviaImage}
         technologies={[TECHNOLOGIES.SWIFT, TECHNOLOGIES.PHOTOSHOP]}
+        title={'Skylines Trivia app'}
       />
       <PortfolioItem
         description={'Spin Wheel Control CocoaPod'}
         image={spinWheelControlImage}
         technologies={[TECHNOLOGIES.SWIFT, TECHNOLOGIES.COCOAPODS]}
+        title={'Spin Wheel Control CocoaPod'}
       />
       <PortfolioItem
         description={
@@ -62,16 +82,19 @@ const Portfolio = () => {
         }
         image={bigSmashImage}
         technologies={[]}
+        title={'Big Smash Software, LLC.'}
       />
       <PortfolioItem
         description={'Central Coop Board of Trustees Website'}
         image={botWebsiteImage}
         technologies={[]}
+        title={'Big Smash Software, LLC.'}
       />
       <PortfolioItem
         description={'Metrics dashboard'}
         image={metricsDashboardImage}
-        technologies={[]}
+        technologies={['php']}
+        title={'Big Smash Software, LLC.'}
       />
 
       <div>vertical with linear x offsets (project pictures)</div>
