@@ -102,7 +102,7 @@ const Portfolio = () => {
         OR INSTEAD project pic comes in from left of screen, tools I used for it
         come in from the right, and text description fades in on scroll
       </div>
-    </div>
+    </div>;
   )
 }
 
