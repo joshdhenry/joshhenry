@@ -21,7 +21,7 @@ const Portfolio = () => {
           TECHNOLOGIES.JAVASCRIPT,
           TECHNOLOGIES.NPM,
         ]}
-        title={'Secondstep K-8 lesson player'}
+        title={'Secondstep K-8 lesson player TEST'}
       />
       <PortfolioItem
         description={'Scrollable Player'}
