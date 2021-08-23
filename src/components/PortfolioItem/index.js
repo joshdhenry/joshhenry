@@ -1,2 +1,2 @@
-import PortfolioItem from './component'
+import PortfolioItem from './container'
 export default PortfolioItem
