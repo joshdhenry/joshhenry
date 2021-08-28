@@ -52,35 +52,45 @@ const Portfolio = () => {
       />
 
       <PortfolioItem
-        description={'My Fish Pal ......'}
+        description={
+          'An iOS app designed to help aquarists keep track of their aquarium and its inhabitants. Utilizes Core Data to let the user create aquarium profiles and log all activities related to it. Uses the iOS-Charts library to visualize important changes in the aquarium’s chemistry levels.'
+        }
         image={myFishPalImage}
         technologies={[TECHNOLOGIES.SWIFT, TECHNOLOGIES.PHOTOSHOP]}
         title={'My Fish Pal app'}
       />
 
       <PortfolioItem
-        description={'Zen Builder'}
+        description={
+          'Zen Builder was my first app to be built using the Objective-C language. This fully-featured meditation timer boasts many features, such as a split view controller for iPad support, iCloud synchronization, and Healthkit support to name a few.'
+        }
         image={zenBuilderImage}
         technologies={[TECHNOLOGIES.OBJECTIVE_C, TECHNOLOGIES.PHOTOSHOP]}
         title={'Zen Builder app'}
       />
 
       <PortfolioItem
-        description={'Vista Weather'}
+        description={
+          'A beautiful and super-accurate weather app for iPhone and iPad. Check the local weather forecast or select any city in the world using the Forecast.io API. In addition to weather conditions, Vista Weather also beautifully displays photos crowd-sourced from your location using the Google Places API.'
+        }
         image={vistaWeatherImage}
         technologies={[TECHNOLOGIES.SWIFT]}
         title={'Vista Weather app'}
       />
 
       <PortfolioItem
-        description={'SkylinesTrivia'}
+        description={
+          'In this enjoyable trivia game for iOS created with Swift and Xcode, you are presented with scenes of city skylines from across the world. Be a jet-setter and guess them all correct to fly around the world. Get them wrong and you might lose your passport! This app relies heavily on Sprite Kit.'
+        }
         image={skylineTriviaImage}
         technologies={[TECHNOLOGIES.SWIFT, TECHNOLOGIES.PHOTOSHOP]}
         title={'Skylines Trivia app'}
       />
 
       <PortfolioItem
-        description={'Spin Wheel Control CocoaPod'}
+        description={
+          'An inertial spinning wheel UI control written in Swift that allows selection of an item.'
+        }
         image={spinWheelControlImage}
         technologies={[TECHNOLOGIES.SWIFT, TECHNOLOGIES.COCOAPODS]}
         title={'Spin Wheel Control CocoaPod'}
