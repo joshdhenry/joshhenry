@@ -7,7 +7,7 @@ import styles from './styles'
 
 const PortfolioItem = ({ image, description, technologyImages, title }) => {
   return (
-    <div style={styles.wrapper}>
+    <div key={title} style={styles.wrapper}>
       <div style={styles.projectImage}>
         <Parallax
           className="custom-class"
