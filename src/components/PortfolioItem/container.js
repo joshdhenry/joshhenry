@@ -14,6 +14,7 @@ import reactImage from '../../assets/images/technologies/react.png'
 import reactNativeImage from '../../assets/images/technologies/reactNative.png'
 import swiftImage from '../../assets/images/technologies/swift.png'
 import webStormImage from '../../assets/images/technologies/webstorm.png'
+import xCodeImage from '../../assets/images/technologies/xCodeIcon.png'
 import { TECHNOLOGIES } from '../../config/constants'
 
 import PortfolioItemComponent from './component'
@@ -66,6 +67,9 @@ const PortfolioItemContainer = ({
         break
       case TECHNOLOGIES.GO:
         image = goImage
+        break
+      case TECHNOLOGIES.XCODE:
+        image = xCodeImage
         break
       default:
         break

@@ -13,4 +13,5 @@ export const TECHNOLOGIES = {
   REACT_NATIVE: 'React Native',
   SWIFT: 'Swift',
   WEBSTORM: 'WebStorm',
+  XCODE: 'XCode'
 }
