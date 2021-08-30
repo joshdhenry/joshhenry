@@ -4,10 +4,4 @@ const wrapper = {
   alignItems: 'center',
 }
 
-const link = {
-  color: 'darkGray',
-  fontWeight: '800',
-  padding: 20,
-}
-
-export default { link, wrapper }
+export default { wrapper }
