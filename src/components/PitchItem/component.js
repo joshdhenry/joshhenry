@@ -1,14 +1,20 @@
 import PropTypes from 'prop-types'
+import Fade from 'react-reveal/Fade'
 import Roll from 'react-reveal/Roll'
+
+import styles from './styles'
 
 const PitchItem = ({ image, title, description }) => {
   return (
     <div className={'PitchItem'}>
       <Roll bottom>
-        <img src={image} style={{ height: 512 }} />
+        <img src={image} style={styles.pitchImage} />
+        <h1>{title}</h1>
       </Roll>
-      <h1>{title}</h1>
-      <div>{description}</div>
+
+      <Fade>
+        <div>{description}</div>
+      </Fade>
     </div>
   )
 }
