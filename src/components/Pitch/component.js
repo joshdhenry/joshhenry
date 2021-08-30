@@ -1,10 +1,11 @@
-import Slide from 'react-reveal/Fade'
+import Slide from 'react-reveal/Slide'
 import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
 
 import bigSmashImage from '../../assets/images/portfolio-big-smash-software-website.jpg'
 import myFishPalImage from '../../assets/images/portfolio-my-fish-pal.jpg'
-// import bubbleImage from "./assets/bubble-sophie-and-clover.jpg";
-// import egyptImage from "./assets/egypt.jpg";
+import PitchItem from '../PitchItem'
+
+import { PITCHES } from './constants'
 
 const Pitch = () => {
   return (
@@ -60,13 +61,15 @@ const Pitch = () => {
       >
         Banner Children
       </ParallaxBanner>
+
       <Slide cascade left>
-        <h1>60 second sell</h1>
-        <h1>Mobile development - phone</h1>
-        <h1>Web development - PC</h1>
-        <h1>Attention to UI detail - Magnifying glass</h1>
-        <h1>Quality and big free - Bug</h1>
-        <h1>Agile process - List</h1>
+        {PITCHES.map((pitch) => (
+          <PitchItem
+            description={pitch.description}
+            image={pitch.image}
+            title={pitch.title}
+          />
+        ))}
       </Slide>
     </div>
   )
