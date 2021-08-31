@@ -1,7 +1,9 @@
 import { PropTypes } from 'prop-types'
 import { Parallax } from 'react-scroll-parallax'
 
+import Body from '../Body'
 import Fade from '../Fade'
+import Header from '../Header'
 
 import styles from './styles'
 
@@ -20,8 +22,8 @@ const PortfolioItem = ({ image, description, technologyImages, title }) => {
 
       <div style={styles.text}>
         <Fade cascade>
-          <h1>{title}</h1>
-          <div>{description}</div>
+          <Header>{title}</Header>
+          <Body>{description}</Body>
         </Fade>
 
         {technologyImages.map((technologyImage) => (
