@@ -10,7 +10,8 @@ import styles from './styles'
 const PitchItem = ({ image, title, description }) => {
   return (
     <div className={'PitchItem'} style={styles.wrapper}>
-      <div style={{ backgroundColor: 'lightGrey' }}>
+      {/*<div style={{ backgroundColor: 'lightGrey' }}>*/}
+      <div style={{ backgroundColor: '#3D3D3D' }}>
         <Roll bottom>
           <img src={image} style={styles.pitchImage} />
         </Roll>

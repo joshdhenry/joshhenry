@@ -1,7 +1,7 @@
 import palette from '../../config/palette'
 
 const text = {
-  color: palette.black,
+  color: palette.white,
   fontSize: '2rem',
   fontWeight: '700',
   paddingTop: '1rem',

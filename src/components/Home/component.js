@@ -5,9 +5,11 @@ import Pitch from '../Pitch'
 import Portfolio from '../Portfolio'
 import Tools from '../Tools'
 
+import styles from './styles'
+
 const Home = () => {
   return (
-    <div className="App">
+    <div className="App" style={styles.wrapper}>
       <NavigationBar />
       <div style={{ height: '500px' }} />
       <Pitch />

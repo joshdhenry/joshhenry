@@ -1,9 +1,7 @@
 import palette from '../../config/palette'
 
-const text = {
-  color: palette.white,
-}
+const wrapper = { backgroundColor: palette.black }
 
 export default {
-  text,
+  wrapper,
 }

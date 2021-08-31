@@ -14,6 +14,7 @@ const technology = {
 const text = {
   backgroundColor: 'red',
   flex: 1,
+  marginRight: '10rem',
   padding: '2rem',
   textAlign: 'left',
 }
