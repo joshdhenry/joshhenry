@@ -1,5 +1,5 @@
 import { PropTypes } from 'prop-types'
-import { Parallax } from 'react-scroll-parallax'
+import Bounce from 'react-reveal/Bounce'
 
 import Body from '../Body'
 import Fade from '../Fade'
@@ -11,13 +11,9 @@ const PortfolioItem = ({ image, description, technologyImages, title }) => {
   return (
     <div key={title} style={styles.wrapper}>
       <div style={styles.projectImage}>
-        <Parallax
-          className="custom-class"
-          tagOuter="figure"
-          x={['-1000px', '0px']}
-        >
+        <Bounce left>
           <img src={image} style={{ height: '15rem' }} />
-        </Parallax>
+        </Bounce>
       </div>
 
       <div style={styles.text}>

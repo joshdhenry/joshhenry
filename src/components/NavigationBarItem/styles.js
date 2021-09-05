@@ -1,7 +1,7 @@
 // import palette from '../../config/palette'
 
 const link = {
-  color: '#E59F71',
+  color: '#92140c',
   cursor: 'pointer',
   fontSize: '1.5rem',
   fontWeight: '800',

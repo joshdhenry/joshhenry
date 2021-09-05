@@ -1,2 +1,2 @@
-import NavigationBar from './container'
+import NavigationBar from './component'
 export default NavigationBar

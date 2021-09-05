@@ -15,14 +15,13 @@ const Home = () => {
       <Marquee />
       <Pitch />
       <div style={{ height: '500px' }} />
-      <Portfolio />
-      <div style={{ height: '500px' }} />
       <About />
+      <div style={{ height: '500px' }} />
+      <Portfolio />
       <div style={{ height: '500px' }} />
       <Tools />
       <div style={{ height: '500px' }} />
       <Contact />
-      <div style={{ height: '500px' }} />
       <Footer />
     </div>
   )
