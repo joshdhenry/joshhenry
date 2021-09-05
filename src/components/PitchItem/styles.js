@@ -1,12 +1,12 @@
-const pitchImage = { height: 512 }
+const pitchImage = { height: '15rem' }
 
 const wrapper = {
-  height: window.innerHeight,
   display: 'flex',
   flexDirection: 'column',
   flex: 1,
   // backgroundColor: 'blue',
   justifyContent: 'center',
+  margin: '15rem',
 }
 
 export default {

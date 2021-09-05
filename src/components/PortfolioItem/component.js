@@ -16,7 +16,7 @@ const PortfolioItem = ({ image, description, technologyImages, title }) => {
           tagOuter="figure"
           x={['-1000px', '0px']}
         >
-          <img src={image} />
+          <img src={image} style={{ height: '15rem' }} />
         </Parallax>
       </div>
 
@@ -27,7 +27,11 @@ const PortfolioItem = ({ image, description, technologyImages, title }) => {
         </Fade>
 
         {technologyImages.map((technologyImage) => (
-          <img src={technologyImage} style={styles.technology} />
+          <img
+            alt={'Some tech...'}
+            src={technologyImage}
+            style={styles.technology}
+          />
         ))}
       </div>
     </div>

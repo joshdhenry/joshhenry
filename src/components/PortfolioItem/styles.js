@@ -1,5 +1,5 @@
 const projectImage = {
-  backgroundColor: 'blue',
+  // backgroundColor: 'blue',
   display: 'flex',
   flex: 1,
   justifyContent: 'flex-end',
@@ -12,7 +12,7 @@ const technology = {
 }
 
 const text = {
-  backgroundColor: 'red',
+  // backgroundColor: 'red',
   flex: 1,
   marginRight: '10rem',
   padding: '2rem',
