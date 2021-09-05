@@ -1,15 +1,13 @@
 import PropTypes from 'prop-types'
 
 import NavigationBarItemComponent from './component'
+import { SCROLL_OPTIONS } from './constants'
 
 const NavigationBarItemContainer = ({ navigateTo, text }) => {
   const navigate = () => {
     const element = document.getElementsByClassName(navigateTo)[0]
-    const scrollOptions = {
-      behavior: 'smooth',
-    }
 
-    element?.scrollIntoView(scrollOptions)
+    element?.scrollIntoView(SCROLL_OPTIONS)
   }
 
   return <NavigationBarItemComponent navigate={navigate} text={text} />

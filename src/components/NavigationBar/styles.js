@@ -1,9 +1,11 @@
+import palette from '../../config/palette'
+
 const wrapper = {
   alignItems: 'center',
-  backgroundColor: 'lightGray',
+  backgroundColor: palette.lightBlue,
   display: 'flex',
   flex: 1,
-  height: '6.5rem',
+  height: '5rem',
   justifyContent: 'space-between',
 }
 

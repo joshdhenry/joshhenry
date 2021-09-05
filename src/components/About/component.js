@@ -1,3 +1,4 @@
+import profileImage from '../../assets/images/profile.jpg'
 import Body from '../Body'
 import Fade from '../Fade'
 import Header from '../Header'
@@ -7,6 +8,9 @@ const About = () => {
     <div className={'About'}>
       <Fade cascade>
         <Header>About Me</Header>
+
+        <img src={profileImage} />
+
         <Body>
           I'm a full-stack software engineer with an emphasis on mobile and web
           technologies, currently residing in Seattle, WA.
