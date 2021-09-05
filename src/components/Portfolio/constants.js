@@ -1,17 +1,19 @@
-import bigSmashImage from '../../assets/images/portfolio-big-smash-software-website.jpg'
-import botWebsiteImage from '../../assets/images/portfolio-BOT-website.jpg'
-import metricsDashboardImage from '../../assets/images/portfolio-metrics-dashboard.png'
-import myFishPalImage from '../../assets/images/portfolio-my-fish-pal.jpg'
-import skylineTriviaImage from '../../assets/images/portfolio-skyline-trivia.jpg'
-import spinWheelControlImage from '../../assets/images/portfolio-spinwheelcontrol.jpg'
-import vistaWeatherImage from '../../assets/images/portfolio-vista-weather.jpg'
-import zenBuilderImage from '../../assets/images/portfolio-zen-builder.jpg'
+import bigSmashImage from '../../assets/images/portfolio/portfolio-big-smash-software-website.jpg'
+import botWebsiteImage from '../../assets/images/portfolio/portfolio-BOT-website.jpg'
+import metricsDashboardImage from '../../assets/images/portfolio/portfolio-metrics-dashboard.png'
+import mindYetiImage from '../../assets/images/portfolio/portfolio-mindYeti.png'
+import myFishPalImage from '../../assets/images/portfolio/portfolio-my-fish-pal.jpg'
+import k8PlayerImage from '../../assets/images/portfolio/portfolio-player.png'
+import skylineTriviaImage from '../../assets/images/portfolio/portfolio-skyline-trivia.jpg'
+import spinWheelControlImage from '../../assets/images/portfolio/portfolio-spinwheelcontrol.jpg'
+import vistaWeatherImage from '../../assets/images/portfolio/portfolio-vista-weather.jpg'
+import zenBuilderImage from '../../assets/images/portfolio/portfolio-zen-builder.jpg'
 import { TECHNOLOGIES } from '../../config/constants'
 
 export const PROJECTS = [
   {
     description: 'K8 Player',
-    image: vistaWeatherImage,
+    image: k8PlayerImage,
     technologies: [
       TECHNOLOGIES.REACT,
       TECHNOLOGIES.JAVASCRIPT,
@@ -33,7 +35,7 @@ export const PROJECTS = [
   },
   {
     description: 'Mind Yeti',
-    image: vistaWeatherImage,
+    image: mindYetiImage,
     technologies: [
       TECHNOLOGIES.REACT,
       TECHNOLOGIES.REACT_NATIVE,
