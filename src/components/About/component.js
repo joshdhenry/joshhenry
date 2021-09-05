@@ -1,5 +1,6 @@
 import profileImage from '../../assets/images/profile.jpg'
 import Body from '../Body'
+import Button from '../Button'
 import Fade from '../Fade'
 import Header from '../Header'
 
@@ -40,8 +41,10 @@ const About = () => {
           </div>
         </div>
 
-        <Header>Resume</Header>
-        <Header>LinkedIn</Header>
+        <div style={styles.buttonsWrapper}>
+          <Button>Resume</Button>
+          <Button>LinkedIn</Button>
+        </div>
       </Fade>
     </div>
   )
