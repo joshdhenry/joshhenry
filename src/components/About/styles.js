@@ -1,16 +1,19 @@
 const wrapper = {
   display: 'flex',
   flex: 1,
-  marginLeft: '15rem',
-  marginRight: '15rem',
+  marginLeft: '25rem',
+  marginRight: '25rem',
+  justifyContent: 'center',
+  // backgroundColor: 'red',
 }
 
 const buttonsWrapper = {
   display: 'flex',
   flex: 1,
   flexDirection: 'row',
-  marginLeft: '15rem',
-  marginRight: '15rem',
+  marginLeft: '25rem',
+  marginRight: '25rem',
+  // width: '20rem',
 }
 
 export default {

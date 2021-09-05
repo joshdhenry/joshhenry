@@ -1,5 +1,6 @@
 import bigSmashImage from '../../assets/images/portfolio/portfolio-big-smash-software-website.jpg'
 import botWebsiteImage from '../../assets/images/portfolio/portfolio-BOT-website.jpg'
+import genConImage from '../../assets/images/portfolio/portfolio-gencon.png'
 import metricsDashboardImage from '../../assets/images/portfolio/portfolio-metrics-dashboard.png'
 import mindYetiImage from '../../assets/images/portfolio/portfolio-mindYeti.png'
 import myFishPalImage from '../../assets/images/portfolio/portfolio-my-fish-pal.jpg'
@@ -34,7 +35,8 @@ export const PROJECTS = [
     title: 'Secondstep Social and Emotional Learning Lesson Player',
   },
   {
-    description: 'Mind Yeti',
+    description:
+      'A React Native app for mobile and web that delivers mindfulness sessions suited for children. Developed the in-app meditation session player, a fully-featured media player with closed-captioning capability. Integrated and managed a variety of services for the backend and frontend, including Amazon Web Services and Google App Engine.',
     image: mindYetiImage,
     technologies: [
       TECHNOLOGIES.REACT,
@@ -47,8 +49,9 @@ export const PROJECTS = [
     title: 'Mind Yeti meditation app',
   },
   {
-    description: 'blah',
-    image: vistaWeatherImage,
+    description:
+      "A cross-platform React Native app developed from the ground-up for a 50-year strong annual board-gaming convention with over 60,000 in attendance. Offline-first app that downloads, stores and queries ~20k convention events using Realm and Lunr.js. App communicates with REST endpoints to authenticate and obtain schedule data, event data, latest app styles, and more. Event hosts can view their schedule and use the camera to scan event attendees' badges and admit them entry into e-ticketed events.",
+    image: genConImage,
     technologies: [
       TECHNOLOGIES.REACT_NATIVE,
       TECHNOLOGIES.JAVASCRIPT,
@@ -74,7 +77,7 @@ export const PROJECTS = [
   },
   {
     description:
-      'Zen Builder was my first app to be built using the Objective-C language. This fully-featured meditation timer boasts many features, such as a split view controller for iPad support, iCloud synchronization, and Healthkit support to name a few.',
+      'A meditation and relaxation timer that lets the user to choose a duration, background sound, and drag & drop checkpoint sound effects onto a timeline. Uses Core Data and iCloud to store saved meditations and maintain the user’s history. Implements Apple Health features by writing mindfulness minutes via HealthKit.',
     image: zenBuilderImage,
     technologies: [
       TECHNOLOGIES.OBJECTIVE_C,
@@ -103,7 +106,7 @@ export const PROJECTS = [
   },
   {
     description:
-      'An inertial spinning wheel UI control written in Swift that allows selection of an item.',
+      'An inertial spinning wheel UI control written in Swift that allows selection of an item. A derivation, port, and enhancement based loosely on a similar existing Objective-C CocoaPod named SMWheelControl. Uses IBInspectable properties to let developers easily configure the UI control from Interface ',
     image: spinWheelControlImage,
     technologies: [TECHNOLOGIES.SWIFT, TECHNOLOGIES.COCOAPODS],
     title: 'Spin Wheel Control CocoaPod',
@@ -116,13 +119,15 @@ export const PROJECTS = [
     title: 'Big Smash Software, LLC.',
   },
   {
-    description: 'Central Coop Board of Trustees Website',
+    description:
+      'Implemented a Google Apps infrastructure to provide the Board of Trustees with an online portal to access collaborative file sharing, email communication, and public discussion.',
     image: botWebsiteImage,
     technologies: [],
     title: 'Central Coop Board of Trustees Website',
   },
   {
-    description: 'Metrics dashboard',
+    description:
+      'Designed and programmed iPad status boards for employees to see at-a-glance live sales history, customer counts, and relevant information to inform and motivate. Coded an internal website for employees to give kudos to fellow associates and have them displayed on the status board. Harnessed C# and the iTextSharp 3rd party library to enable the output of SQL queries to a formatted PDF file.',
     image: metricsDashboardImage,
     technologies: ['php'],
     title: 'Central Coop Metrics dashboard',

@@ -1,10 +1,12 @@
 const palette = {
-  // black: '#0f1a20',
-  // black: '#333333',
-  black: '#292655',
+  blue: '#292655',
+  lightBlue: '#b5d7f2',
   purple: '#6b4e71',
+  red: '#92140c',
   white: '#fffcf7',
-  lightBlue: '#b5d7f2'
 }
+
+// black: '#0f1a20',
+// black: '#333333',
 
 export default palette
