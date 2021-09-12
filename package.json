@@ -1,6 +1,7 @@
 {
   "name": "joshhenry",
   "version": "0.1.0",
+  "homepage": "https://joshhenry.info",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",

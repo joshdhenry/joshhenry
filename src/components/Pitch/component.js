@@ -30,9 +30,34 @@ const Pitch = () => {
     })
 
     return (
-      <div>
-        <div>{pitchCollectionLeft}</div>
-        <div>{pitchCollectionRight}</div>
+      <div
+        style={{
+          display: 'flex',
+          flex: 1,
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            flex: 1,
+            flexDirection: 'column',
+            // backgroundColor: 'red',
+          }}
+        >
+          {pitchCollectionLeft}
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            flex: 1,
+            flexDirection: 'column',
+            // backgroundColor: 'green',
+          }}
+        >
+          {pitchCollectionRight}
+        </div>
       </div>
     )
   }

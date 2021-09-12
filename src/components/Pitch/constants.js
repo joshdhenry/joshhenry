@@ -22,14 +22,20 @@ export const PITCHES = [
     title: 'Attention to detail',
   },
   {
-    description: 'Delivering a polished, flawless product is my passion.',
+    description: 'Delivering a polished, reliable product is my passion.',
     image: bugImage,
     title: 'Quality and bug-free',
   },
   {
     description:
-      'Utilizing the Agile process of software development, I create software in thin slices in order to constantly deliver quality improvements and guarantee the product makes it to market as soon as possible.',
+      'I deliver thin slices of functionality to help you get your product to market faster.',
     image: layersImage,
     title: 'Agile Process',
+  },
+  {
+    description:
+      "From idea to release to beyond. I can create a product that meets the customers' needs.",
+    image: layersImage,
+    title: 'Software lifecycle',
   },
 ]

@@ -5,7 +5,9 @@ import styles from './styles.js'
 const MarqueeComponent = () => {
   return (
     <div style={{ display: 'flex', flex: 1 }}>
-      <img src={handshakeImage} style={styles.image} />
+      <div style={{ height: '100%', width: '100%' }}>
+        <img src={handshakeImage} style={styles.image} />
+      </div>
     </div>
   )
 }

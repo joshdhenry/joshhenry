@@ -13,6 +13,7 @@ const Home = () => {
     <div className="App" style={styles.wrapper}>
       <NavigationBar />
       <Marquee />
+      <div style={{ height: '300px' }} />
       <Pitch />
       <div style={{ height: '500px' }} />
       <About />
