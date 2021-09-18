@@ -1,10 +1,16 @@
 import Slide from 'react-reveal/Slide'
 
+import { default as viewportHooks } from '../../hooks/useViewport'
 import PitchItem from '../PitchItem'
 
 import { PITCHES } from './constants'
+import desktopStyles from './styles'
+import mobileStyles from './styles.mobile'
 
 const Pitch = () => {
+  const { width } = viewportHooks.useViewport()
+  const styles = width > 640 ? desktopStyles : mobileStyles
+
   const getPitches = () => {
     let pitchCollectionLeft = []
     let pitchCollectionRight = []
@@ -30,46 +36,12 @@ const Pitch = () => {
     })
 
     return (
-      <div
-        style={{
-          display: 'flex',
-          flex: 1,
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-            flex: 1,
-            flexDirection: 'column',
-            // backgroundColor: 'red',
-          }}
-        >
-          {pitchCollectionLeft}
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            flex: 1,
-            flexDirection: 'column',
-            // backgroundColor: 'green',
-          }}
-        >
-          {pitchCollectionRight}
-        </div>
+      <div style={styles.wrapper}>
+        <div style={styles.pitch}>{pitchCollectionLeft}</div>
+        <div style={styles.pitch}>{pitchCollectionRight}</div>
       </div>
     )
   }
-
-  //WORKS
-  // PITCHES.map((pitch) => (
-  //   <PitchItem
-  //     description={pitch.description}
-  //     image={pitch.image}
-  //     title={pitch.title}
-  //   />
-  // ))
 
   return (
     <div className={'Pitch'}>
