@@ -1,5 +1,5 @@
 // const pitchImage = { height: '15rem' }
-const pitchImage = { width: '100%' }
+const pitchImage = { width: '50%' }
 
 const wrapper = {
   display: 'flex',
