@@ -3,6 +3,7 @@ import cpuImage from '../../assets/images/cpu.png'
 import layersImage from '../../assets/images/layers.png'
 import pcImage from '../../assets/images/pc.png'
 import phoneImage from '../../assets/images/phone.png'
+import projectImage from '../../assets/images/project.png'
 
 export const PITCHES = [
   {
@@ -35,7 +36,7 @@ export const PITCHES = [
   {
     description:
       "From idea to release to beyond. I can create a product that meets the customers' needs.",
-    image: layersImage,
+    image: projectImage,
     title: 'Software lifecycle',
   },
 ]
