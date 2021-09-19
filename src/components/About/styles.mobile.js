@@ -11,19 +11,18 @@ const image = {
 }
 
 export const paragraph = {
-  textAlign: 'left',
   margin: '0.5rem 1rem',
+  textAlign: 'left',
 }
 
 const wrapper = {
+  alignItems: 'center',
   display: 'flex',
   flex: 1,
   flexDirection: 'column',
+  justifyContent: 'center',
   marginLeft: '1rem',
   marginRight: '1rem',
-  justifyContent: 'center',
-  backgroundColor: 'red',
-  alignItems: 'center',
 }
 
 export default {
