@@ -10,8 +10,8 @@ import desktopStyles from './styles'
 import mobileStyles from './styles.mobile'
 
 const PitchItem = ({ image, title, description }) => {
-  const { width } = viewportHooks.useViewport()
-  const styles = width > 640 ? desktopStyles : mobileStyles
+  const { isMobile } = viewportHooks.useViewport()
+  const styles = isMobile ? mobileStyles : desktopStyles
 
   return (
     <div className={'PitchItem'} style={styles.wrapper}>

@@ -1,19 +1,24 @@
 import profileImage from '../../assets/images/profile.jpg'
+import { default as viewportHooks } from '../../hooks/useViewport'
 import Body from '../Body'
 import Button from '../Button'
 import Fade from '../Fade'
 import Header from '../Header'
 
-import styles from './styles'
+import desktopStyles from './styles'
+import mobileStyles from './styles.mobile.js'
 
 const About = () => {
+  const { isMobile } = viewportHooks.useViewport()
+  const styles = isMobile ? mobileStyles : desktopStyles
+
   return (
     <div className={'About'}>
       <Fade cascade>
         <Header>About Me</Header>
 
         <div style={styles.wrapper}>
-          <img src={profileImage} style={{ height: '18rem' }} />
+          <img src={profileImage} style={styles.image} />
 
           <div>
             <div style={styles.paragraph}>

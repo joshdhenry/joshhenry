@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 
+import { MAX_WIDTH_MOBILE } from '../config/constants'
+
 const useViewport = () => {
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize)
@@ -12,8 +14,9 @@ const useViewport = () => {
     setWidth(window.innerWidth)
     setHeight(window.innerHeight)
   }
+  const isMobile = width < MAX_WIDTH_MOBILE
 
-  return { width, height }
+  return { height, isMobile, width }
 }
 
 export default {

@@ -7,7 +7,7 @@ const wrapper = {
   flex: 1,
   // backgroundColor: 'blue',
   justifyContent: 'center',
-  margin: '10rem 15rem',
+  margin: '10rem 1rem',
 }
 
 export default {

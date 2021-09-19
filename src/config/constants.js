@@ -1,3 +1,5 @@
+export const MAX_WIDTH_MOBILE = 640
+
 export const TECHNOLOGIES = {
   AZURE: 'Microsoft Azure',
   AWS: 'Amazon Web Services',

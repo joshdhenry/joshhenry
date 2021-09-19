@@ -8,8 +8,8 @@ import desktopStyles from './styles'
 import mobileStyles from './styles.mobile'
 
 const Pitch = () => {
-  const { width } = viewportHooks.useViewport()
-  const styles = width > 640 ? desktopStyles : mobileStyles
+  const { isMobile } = viewportHooks.useViewport()
+  const styles = isMobile ? mobileStyles : desktopStyles
 
   const getPitches = () => {
     let pitchCollectionLeft = []

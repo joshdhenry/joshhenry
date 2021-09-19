@@ -1,4 +1,4 @@
-// import About from '../About'
+import About from '../About'
 // import Contact from '../Contact'
 // import Footer from '../Footer'
 import Marquee from '../Marquee'
@@ -16,8 +16,8 @@ const Home = () => {
       <div style={{ height: '300px' }} />
       <Pitch />
       <div style={{ height: '500px' }} />
-      {/*<About />*/}
-      {/*<div style={{ height: '500px' }} />*/}
+      <About />
+      <div style={{ height: '500px' }} />
       {/*<Portfolio />*/}
       {/*<div style={{ height: '500px' }} />*/}
       {/*<Tools />*/}
