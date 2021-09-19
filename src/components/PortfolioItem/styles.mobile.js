@@ -1,10 +1,10 @@
-const image = { height: '15rem' }
+const image = { width: '15rem' }
 
 const imageWrapper = {
   display: 'flex',
   flex: 1,
-  justifyContent: 'flex-end',
-  padding: '2rem',
+  justifyContent: 'center',
+  padding: '0rem',
 }
 
 const technology = {
@@ -14,16 +14,14 @@ const technology = {
 
 const text = {
   flex: 1,
-  marginRight: '10rem',
   padding: '2rem',
-  textAlign: 'left',
+  textAlign: 'center',
 }
 
 const wrapper = {
   display: 'flex',
   flex: 1,
-  flexDirection: 'row',
-  margin: '1rem 2rem 1rem 2rem',
+  flexDirection: 'column',
 }
 
 export default {

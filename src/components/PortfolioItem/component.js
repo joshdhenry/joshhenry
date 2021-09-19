@@ -1,18 +1,23 @@
 import { PropTypes } from 'prop-types'
 import Bounce from 'react-reveal/Bounce'
 
+import { default as viewportHooks } from '../../hooks/useViewport'
 import Body from '../Body'
 import Fade from '../Fade'
 import Header from '../Header'
 
-import styles from './styles'
+import desktopStyles from './styles'
+import mobileStyles from './styles.mobile.js'
 
 const PortfolioItem = ({ image, description, technologyImages, title }) => {
+  const { isMobile } = viewportHooks.useViewport()
+  const styles = isMobile ? mobileStyles : desktopStyles
+
   return (
     <div key={title} style={styles.wrapper}>
-      <div style={styles.projectImage}>
+      <div style={styles.imageWrapper}>
         <Bounce left>
-          <img src={image} style={{ height: '15rem' }} />
+          <img src={image} style={styles.image} />
         </Bounce>
       </div>
 
