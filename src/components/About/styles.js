@@ -1,3 +1,8 @@
+const about = {
+  display: 'flex',
+  flex: 0.5,
+}
+
 const buttonsWrapper = {
   display: 'flex',
   flex: 1,
@@ -22,6 +27,7 @@ const wrapper = {
 }
 
 export default {
+  about,
   buttonsWrapper,
   image,
   paragraph,
