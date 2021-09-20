@@ -59,8 +59,10 @@ const About = () => {
         </div>
 
         <div style={styles.buttonsWrapper}>
-          <Button>Resume</Button>
-          <Button>LinkedIn</Button>
+          <div style={styles.buttons}>
+            <Button>Resume</Button>
+            <Button>LinkedIn</Button>
+          </div>
         </div>
       </Fade>
     </div>

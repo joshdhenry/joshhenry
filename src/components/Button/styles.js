@@ -3,10 +3,9 @@ import palette from '../../config/palette'
 const button = {
   backgroundColor: palette.lightBlue,
   color: palette.red,
-  fontSize: '2rem',
+  fontSize: '1.5rem',
   fontWeight: '700',
-  paddingTop: '1rem',
-  paddingBottom: '1rem',
+  padding: '1rem',
   cursor: 'pointer',
   borderRadius: '1rem',
   margin: '1rem',

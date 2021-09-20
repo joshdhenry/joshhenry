@@ -3,12 +3,22 @@ const about = {
   flex: 0.5,
 }
 
+const buttons = {
+  display: 'flex',
+  flex: 0.5,
+  flexDirection: 'row',
+  marginLeft: '1rem',
+  marginRight: '1rem',
+  width: '50%',
+}
+
 const buttonsWrapper = {
   display: 'flex',
   flex: 1,
   flexDirection: 'row',
   marginLeft: '1rem',
   marginRight: '1rem',
+  justifyContent: 'center',
 }
 
 const image = { height: '18rem' }
@@ -28,6 +38,7 @@ const wrapper = {
 
 export default {
   about,
+  buttons,
   buttonsWrapper,
   image,
   paragraph,
