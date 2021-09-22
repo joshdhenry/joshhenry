@@ -5,6 +5,7 @@ import metricsDashboardImage from '../../assets/images/portfolio/portfolio-metri
 import mindYetiImage from '../../assets/images/portfolio/portfolio-mindYeti.png'
 import myFishPalImage from '../../assets/images/portfolio/portfolio-my-fish-pal.jpg'
 import k8PlayerImage from '../../assets/images/portfolio/portfolio-player.png'
+import selaImage from '../../assets/images/portfolio/portfolio-sela.png'
 import skylineTriviaImage from '../../assets/images/portfolio/portfolio-skyline-trivia.jpg'
 import spinWheelControlImage from '../../assets/images/portfolio/portfolio-spinwheelcontrol.jpg'
 import vistaWeatherImage from '../../assets/images/portfolio/portfolio-vista-weather.jpg'
@@ -13,7 +14,8 @@ import { TECHNOLOGIES } from '../../config/constants'
 
 export const PROJECTS = [
   {
-    description: 'K8 Player',
+    description:
+      'A react app that plays interactive presentations that teach social and emotional learning to kids from kindergarten to grade 8. Underlying state management includes Redux and sagas.',
     image: k8PlayerImage,
     technologies: [
       TECHNOLOGIES.REACT,
@@ -21,18 +23,19 @@ export const PROJECTS = [
       TECHNOLOGIES.NPM,
       TECHNOLOGIES.AZURE,
     ],
-    title: 'Secondstep K-8 lesson player',
+    title: 'Secondstep K-8 Social and Emotional Learning Lesson Player',
   },
   {
-    description: 'Scrollable Player',
-    image: vistaWeatherImage,
+    description:
+      'A react app that enables adults to master social emotional learning on their browser. Uses REST endpooints and Redux to provide interactivity to the user.',
+    image: selaImage,
     technologies: [
       TECHNOLOGIES.REACT,
       TECHNOLOGIES.JAVASCRIPT,
       TECHNOLOGIES.NPM,
       TECHNOLOGIES.AZURE,
     ],
-    title: 'Secondstep Social and Emotional Learning Lesson Player',
+    title: 'Secondstep Social and Emotional Learning Lesson Player for Adults',
   },
   {
     description:

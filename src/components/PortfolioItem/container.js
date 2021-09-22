@@ -1,5 +1,4 @@
 import { PropTypes } from 'prop-types'
-// import { Parallax } from 'react-scroll-parallax'
 
 import azureImage from '../../assets/images/technologies/azureIcon.png'
 import cocoaPodsImage from '../../assets/images/technologies/cocoapodsIcon.png'

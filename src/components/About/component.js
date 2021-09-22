@@ -1,4 +1,5 @@
 import profileImage from '../../assets/images/profile.jpg'
+import resume from '../../assets/pdf/Josh Henry - Fullstack Developer - Resume.pdf'
 import { default as viewportHooks } from '../../hooks/useViewport'
 import Body from '../Body'
 import Button from '../Button'
@@ -60,8 +61,16 @@ const About = () => {
 
         <div style={styles.buttonsWrapper}>
           <div style={styles.buttons}>
-            <Button>Resume</Button>
-            <Button>LinkedIn</Button>
+            <Button onClick={() => window.open(resume, '_blank')}>
+              Resume
+            </Button>
+            <Button
+              onClick={() =>
+                window.open('https://www.linkedin.com/in/joshdhenry/', '_blank')
+              }
+            >
+              LinkedIn
+            </Button>
           </div>
         </div>
       </Fade>
