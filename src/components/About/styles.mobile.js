@@ -2,7 +2,7 @@ const about = {}
 
 const buttons = {
   display: 'flex',
-  flex: 0.5,
+  flex: 0.85,
   flexDirection: 'row',
   marginLeft: '1rem',
   marginRight: '1rem',
@@ -13,8 +13,6 @@ const buttonsWrapper = {
   display: 'flex',
   flex: 1,
   flexDirection: 'row',
-  marginLeft: '1rem',
-  marginRight: '1rem',
   justifyContent: 'center',
 }
 
@@ -33,8 +31,7 @@ const wrapper = {
   flex: 1,
   flexDirection: 'column',
   justifyContent: 'center',
-  marginLeft: '1rem',
-  marginRight: '1rem',
+  margin: '1rem',
 }
 
 export default {

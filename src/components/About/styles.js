@@ -1,6 +1,6 @@
 const about = {
   display: 'flex',
-  flex: 0.5,
+  flex: 0.85,
 }
 
 const buttons = {
@@ -16,15 +16,13 @@ const buttonsWrapper = {
   display: 'flex',
   flex: 1,
   flexDirection: 'row',
-  marginLeft: '1rem',
-  marginRight: '1rem',
   justifyContent: 'center',
 }
 
 const image = { height: '18rem' }
 
 export const paragraph = {
-  margin: '0.5rem 1rem',
+  margin: '0rem 1rem 0.5rem 1rem',
   textAlign: 'left',
 }
 
@@ -32,8 +30,7 @@ const wrapper = {
   display: 'flex',
   flex: 1,
   justifyContent: 'center',
-  marginLeft: '1rem',
-  marginRight: '1rem',
+  margin: '1rem',
 }
 
 export default {
