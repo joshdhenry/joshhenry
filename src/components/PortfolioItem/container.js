@@ -1,5 +1,6 @@
 import { PropTypes } from 'prop-types'
 
+import awsImage from '../../assets/images/technologies/awsIcon.png'
 import azureImage from '../../assets/images/technologies/azureIcon.png'
 import cocoaPodsImage from '../../assets/images/technologies/cocoapodsIcon.png'
 import goImage from '../../assets/images/technologies/goIcon.png'
@@ -9,6 +10,7 @@ import nodeImage from '../../assets/images/technologies/nodeIcon.png'
 import npmImage from '../../assets/images/technologies/npm.png'
 import objectiveCImage from '../../assets/images/technologies/objectiveCIcon.png'
 import photoshopImage from '../../assets/images/technologies/photoshopIcon.png'
+import phpImage from '../../assets/images/technologies/phpIcon.png'
 import reactImage from '../../assets/images/technologies/react.png'
 import reactNativeImage from '../../assets/images/technologies/reactNative.png'
 import swiftImage from '../../assets/images/technologies/swift.png'
@@ -70,6 +72,12 @@ const PortfolioItemContainer = ({
       case TECHNOLOGIES.XCODE:
         image = xCodeImage
         break
+      case TECHNOLOGIES.PHP:
+        image = phpImage
+        break
+      case TECHNOLOGIES.AWS:
+        image = awsImage
+        break
       default:
         break
     }
@@ -83,6 +91,7 @@ const PortfolioItemContainer = ({
     <PortfolioItemComponent
       description={description}
       image={image}
+      technologyCaptions={technologies}
       technologyImages={technologyImages}
       title={title}
     />

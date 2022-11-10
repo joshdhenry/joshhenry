@@ -7,13 +7,14 @@ import projectImage from '../../assets/images/project.png'
 
 export const PITCHES = [
   {
-    description: 'I write native mobile apps for iOS and Android.',
+    description:
+      'I write native mobile apps for iOS and Android using Swift, Objective C, and Java.',
     image: phoneImage,
     title: 'Mobile development',
   },
   {
     description:
-      'I create quality web applications used by thousands of users.',
+      "I'm well-versed in the React ecosystem and have created quality web applications used by thousands of users.",
     image: pcImage,
     title: 'Web development',
   },
@@ -23,7 +24,8 @@ export const PITCHES = [
     title: 'Attention to detail',
   },
   {
-    description: 'Delivering a polished, reliable product is my passion.',
+    description:
+      'Test-driven development delivers a polished and reliable product.',
     image: bugImage,
     title: 'Quality and bug-free',
   },

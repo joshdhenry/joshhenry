@@ -1,11 +1,12 @@
 import profileImage from '../../assets/images/profile.jpg'
-import resume from '../../assets/pdf/Josh Henry - Fullstack Developer - Resume.pdf'
+import resume from '../../assets/pdf/Josh Henry - Resume.pdf'
 import { default as viewportHooks } from '../../hooks/useViewport'
 import Body from '../Body'
 import Button from '../Button'
 import Fade from '../Fade'
 import Header from '../Header'
 
+import { LINKEDIN_URL } from './constants'
 import desktopStyles from './styles'
 import mobileStyles from './styles.mobile.js'
 
@@ -51,8 +52,8 @@ const About = () => {
                 <Body>
                   I am capable in all aspects of development, including
                   frontend, backend, and systems architecture. My current core
-                  area of expertise is development of web apps using React and
-                  Javascript.
+                  area of expertise is development of mobile apps, both natively
+                  and with React Native.
                 </Body>
               </div>
             </div>
@@ -64,11 +65,7 @@ const About = () => {
             <Button onClick={() => window.open(resume, '_blank')}>
               Resume
             </Button>
-            <Button
-              onClick={() =>
-                window.open('https://www.linkedin.com/in/joshdhenry/', '_blank')
-              }
-            >
+            <Button onClick={() => window.open(LINKEDIN_URL, '_blank')}>
               LinkedIn
             </Button>
           </div>

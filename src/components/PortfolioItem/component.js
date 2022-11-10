@@ -9,7 +9,13 @@ import Header from '../Header'
 import desktopStyles from './styles'
 import mobileStyles from './styles.mobile.js'
 
-const PortfolioItem = ({ image, description, technologyImages, title }) => {
+const PortfolioItem = ({
+  image,
+  description,
+  technologyCaptions,
+  technologyImages,
+  title,
+}) => {
   const { isMobile } = viewportHooks.useViewport()
   const styles = isMobile ? mobileStyles : desktopStyles
 
@@ -27,11 +33,13 @@ const PortfolioItem = ({ image, description, technologyImages, title }) => {
           <Body>{description}</Body>
         </Fade>
 
-        {technologyImages.map((technologyImage) => (
+        {technologyImages.map((technologyImage, index) => (
           <img
-            alt={'Some tech...'}
+            alt={technologyCaptions[index]}
+            key={index}
             src={technologyImage}
             style={styles.technology}
+            title={technologyCaptions[index]}
           />
         ))}
       </div>
@@ -42,6 +50,7 @@ const PortfolioItem = ({ image, description, technologyImages, title }) => {
 PortfolioItem.propTypes = {
   description: PropTypes.string,
   image: PropTypes.string,
+  technologyCaptions: PropTypes.arrayOf(PropTypes.string),
   technologyImages: PropTypes.arrayOf(PropTypes.node),
   title: PropTypes.string,
 }

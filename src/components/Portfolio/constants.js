@@ -1,5 +1,6 @@
 import bigSmashImage from '../../assets/images/portfolio/portfolio-big-smash-software-website.jpg'
 import botWebsiteImage from '../../assets/images/portfolio/portfolio-BOT-website.jpg'
+import diabloGolfImage from '../../assets/images/portfolio/portfolio-diabloGolf.png'
 import genConImage from '../../assets/images/portfolio/portfolio-gencon.png'
 import metricsDashboardImage from '../../assets/images/portfolio/portfolio-metrics-dashboard.png'
 import mindYetiImage from '../../assets/images/portfolio/portfolio-mindYeti.png'
@@ -13,6 +14,18 @@ import zenBuilderImage from '../../assets/images/portfolio/portfolio-zen-builder
 import { TECHNOLOGIES } from '../../config/constants'
 
 export const PROJECTS = [
+  {
+    description:
+      'Native iOS and Android apps that change the way people play golf together!',
+    image: diabloGolfImage,
+    technologies: [
+      TECHNOLOGIES.SWIFT,
+      TECHNOLOGIES.OBJECTIVE_C,
+      TECHNOLOGIES.JAVA,
+      TECHNOLOGIES.AWS,
+    ],
+    title: 'Diablo Golf Apps for iOS and Android',
+  },
   {
     description:
       'A react app that plays interactive presentations that teach social and emotional learning to kids from kindergarten to grade 8. Underlying state management includes Redux and sagas.',
@@ -132,7 +145,7 @@ export const PROJECTS = [
     description:
       'Designed and programmed iPad status boards for employees to see at-a-glance live sales history, customer counts, and relevant information to inform and motivate. Coded an internal website for employees to give kudos to fellow associates and have them displayed on the status board. Harnessed C# and the iTextSharp 3rd party library to enable the output of SQL queries to a formatted PDF file.',
     image: metricsDashboardImage,
-    technologies: ['php'],
+    technologies: [TECHNOLOGIES.PHP],
     title: 'Central Coop Metrics dashboard',
   },
 ]

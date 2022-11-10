@@ -11,6 +11,7 @@ export const TECHNOLOGIES = {
   NPM: 'NPM',
   OBJECTIVE_C: 'Objective-C',
   PHOTOSHOP: 'Photoshop',
+  PHP: "PHP",
   REACT: 'React',
   REACT_NATIVE: 'React Native',
   SWIFT: 'Swift',
